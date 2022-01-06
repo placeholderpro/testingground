@@ -1,0 +1,135 @@
+:root {
+    --highlight: #ff7474;
+    --white: #ffffff;
+  }
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size:medium;
+    background-color: lightgray;
+    text-align: center;
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    /*border: 1px solid darkgray; */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+}
+
+.controller {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    width: 88%;
+}
+
+.label {
+    color:black;
+    background-color: rgb(192, 192, 192);
+    border-top: 2px solid var(--highlight);
+    padding:2px;
+    margin-block: 2px;
+    font-size:small;
+    font-weight:550;
+}
+      
+h1 {
+    font-size:32px;
+    font-weight:bolder;
+    background-color: rgb(192, 192, 192);
+    border-bottom: 2px solid var(--highlight);
+}
+
+h2 {
+    font-size:16px;
+    font-style:italic;
+    padding:2px;
+    color:rgb(88, 88, 88);
+}
+
+h3 {
+    background-color: rgb(192, 192, 192);
+    border-top: 2px solid var(--highlight);
+}
+
+a {
+    font-size: 16px;
+    font-weight: bolder;
+    color:var(--highlight);
+}
+
+input[type=text] {
+    border: 6px dashed var(--highlight);
+    outline: none;
+    font-weight: bolder;
+    width: 88%;
+  }
+
+input[type=button]{
+    background-color:var(--highlight);
+    padding: 4px;
+    color: lightgrey;
+    cursor: pointer;
+    font-weight: 550;
+    font-size:32px;
+    align-self:center;
+  }
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 94%; /* Full-width */
+    height: 2px; /* Specified height */
+    border-radius: 0%; 
+    background: #000000; /* White background */
+    outline: none; /* Remove outline */
+    opacity: 1 /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 8px; /* Set a specific slider handle width */
+    height: 34px;
+    border-radius: 0%;
+    background: var(--highlight);
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+.slider::-moz-range-thumb {
+    width: 8px; /* Set a specific slider handle width */
+    height: 8px; /* Slider handle height */
+    border-radius: 0%;
+    background: #000000;
+    cursor: pointer; /* Cursor on hover */
+  }
+
+.gimppic {
+    width: 80%;
+    height: auto;
+  }
+
+.buffer {
+      height:12px;
+  }
+
+}
+
+

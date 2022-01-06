@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRC-2000</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>DRC-2000</h1> 
+    <a  href="index.html"> >> home << </a>
+    <h2>drum recursion compiler</h2>
+   
+    <div class="container">
+        <form class ="textbox">
+            <input type="text" id="seed" name="seed"><br>
+            <label for="seed"> ˄˄ SEED ˄˄ </label><br>
+            </form>
+
+        <form class ="button">
+            <input type="button" value="GENERATE MIDI FILE"><br>
+        </form>
+    
+        <form class ="textbox">
+            <input type="text" id="filename" name="filename"><br>
+            <label for="filename"> ˄˄ FILENAME ˄˄ </label><br>
+            </form>   
+    </div>
+
+    <h2>CLOCK</h2>
+
+    <div class="container">
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="30" max="360" value="92" class="slider" id="tempo">
+            </div>
+            <div class="label">tempo:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="swing">
+            </div>
+            <div class="label">swing:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="64" value="8" class="slider" id="patternLength">
+            </div>
+            <div class="label">pattern length:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="1024" value="256" class="slider" id="barAmount">
+            </div>
+            <div class="label">amount of bars:</div>
+        </div>
+    </div>
+
+    <h2>ACCENT</h2>
+
+    <div class="container">
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="accentDensity">
+            </div>
+            <div class="label">accent density:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="accentSyncopation">
+            </div>
+            <div class="label">accent syncopation:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="10" class="slider" id="accentVariation">
+            </div>
+            <div class="label">accent variation:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="accentSmoothness">
+            </div>
+            <div class="label">accent smoothness:</div>
+        </div>
+    </div>
+
+    <h2>KICK</h2>
+
+    <div class="container">
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="40" class="slider" id="kickDensity">
+            </div>
+            <div class="label">kick density:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="20" class="slider" id="kickSyncopation">
+            </div>
+            <div class="label">kick syncopation:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="10" class="slider" id="kickVariation">
+            </div>
+            <div class="label">kick variation:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="15" class="slider" id="kickAccent">
+            </div>
+            <div class="label">kick accent:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="5" class="slider" id="kickVelocity">
+            </div>
+            <div class="label">kick velocity:</div>
+        </div>
+    </div>
+
+    <h2>SNARE</h2>
+
+    <div class="container">
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="60" class="slider" id="snareDensity">
+            </div>
+            <div class="label">snare density:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="60" class="slider" id="snareSyncopation">
+            </div>
+            <div class="label">snare syncopation:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="10" class="slider" id="snareVariation">
+            </div>
+            <div class="label">snare variation:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="snarekAccent">
+            </div>
+            <div class="label">snare accent:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="snareVelocity">
+            </div>
+            <div class="label">snare velocity:</div>
+        </div>
+    </div>
+
+    <h2>HI HAT</h2>
+
+    <div class="container">
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="80" class="slider" id="hatDensity">
+            </div>
+            <div class="label">hat density:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="30" class="slider" id="hatSyncopation">
+            </div>
+            <div class="label">hat syncopation:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="40" class="slider" id="hatVariation">
+            </div>
+            <div class="label">hat variation:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="20" class="slider" id="hatAccent">
+            </div>
+            <div class="label">hat accent:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="50" class="slider" id="hatVelocity">
+            </div>
+            <div class="label">hat velocity:</div>
+        </div>
+    </div>
+
+    <h2>RANDOMIZATION</h2>
+
+    <div class="container">
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="5" class="slider" id="slop">
+            </div>
+            <div class="label">slop:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="5" class="slider" id="chaos">
+            </div>
+            <div class="label">CHAOS:</div>
+        </div>
+        <div class="controller">
+            <div class="slidecontainer">
+                <input type="range" min="1" max="100" value="5" class="slider" id="mutation">
+            </div>
+            <div class="label">mutation:</div>
+        </div>
+        
+    </div>
+
+
+    
+
+</body>
+</html>
