@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>thing</title>
+  <style>
+  </style>
+</head>
+<body>
+  <script>
+    let num = 0;
+    let num2 = 0;
+    let inputString = 'yeahok';
+
+    function add7(num){
+        alert(num+7);
+    }
+    
+    function multiply(num, num2){
+        alert(num*num2);
+    }
+
+    function capitalize(inputString){
+        alert(inputString.substr(0,1).toUpperCase() + inputString.substr(1).toLowerCase());
+    }
+
+    function lastletter(inputString){
+        alert(inputString.substr((inputString.length-1),1));
+    }
+
+    function min(a, b){
+        if (a>b) {
+            return b;
+        }
+        if (a<b) {
+            return a;
+        }
+        else return "equal";
+    }
+
+    function pow(x, n) {
+        let y = x;
+
+        for (let i = 1; i < n; i++) {
+            y = y * x;
+        }
+
+        return y;
+        }
+
+        
+        alert( sum(1, 2) ); // 3
+
+    
+        
+    }
+    
+
+
+  </script>
+</body>
+</html>

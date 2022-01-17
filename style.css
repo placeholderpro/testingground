@@ -92,8 +92,8 @@ input[type=button]{
     border-radius: 0%; 
     background: #000000; /* White background */
     outline: none; /* Remove outline */
-    opacity: 1 /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    opacity: 1; /* Set transparency (for mouse-over effects on hover) */
+     -webkit-transition: .2s;  /*0.2 seconds transition on hover */
     transition: opacity .2s;
   }
   
@@ -130,6 +130,9 @@ input[type=button]{
       height:12px;
   }
 
-}
 
+select {
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+}
 
