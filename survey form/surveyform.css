@@ -1,0 +1,65 @@
+* {    
+    font-family: 'Roboto Mono', Courier, monospace;
+    /*border: 2px solid palevioletred;*/
+    margin: 0px; 
+}
+
+::placeholder {
+    color: gainsboro;
+    font-size: 100%;
+  }
+
+#header { 
+    text-align: center;
+    background-color: antiquewhite;
+    margin-block: auto;
+    padding: 10px;
+}
+
+form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    background-color:gainsboro;
+    
+}
+
+.item {
+    width: 80%;
+    margin: auto;
+
+}
+
+#name, #email, #number, #dropdown, #comment, #submit {
+    width: 100%;
+    border: 2px solid antiquewhite;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=number] {
+    outline: none;
+}
+
+#name, #email, #number, #dropdown {
+    height: 24px;
+}
+
+#jjj, #jazz {
+    margin-top: 8px;
+}
+
+#submit {
+    padding:10px;
+}
+
+#dropdown select {
+    display: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+

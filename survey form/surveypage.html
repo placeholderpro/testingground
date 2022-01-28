@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">SURVEY!</h1>
+        <p id="description">Please fill out this survey.</p>
+    </div>
+    <form id="survey-form">
+        <br>
+        <div class="item">
+        <label for="name" id="name-label">Name</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="enter name" required>
+        </div>
+        <br>
+        <div class="item">        
+        <label for="email" id="email-label">E-Mail</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="enter e-mail" required>
+        </div>
+        <br>
+        <div class="item">
+        <label for="age" id="number-label">Age</label>
+        <br>
+        <input type="number" id="number" name="age" min="0" max="150" placeholder="select age">
+        </div>
+        <br>
+        <div class="item">
+        <label for="happiness" id="happiness-label">Happiness</label>
+        <br>
+        <select for="happiness" id="dropdown" class="dropdown">
+            <option value="veryhappy">Very Happy!</option>
+            <option value="happy">Happy</option>
+            <option value="neutral">Neutral</option>
+            <option value="unhappy">Unhappy</option>
+            <option value="sad">Sad :(</option>
+        </select>
+        </div>
+        <br>
+        <div class="item">
+        <label id="radiobuttons">Favourite Radio Station?</label>
+        <br>
+            <input type="radio" id="jjj" name="faveradio" value="jjj">
+                <label for="jjj">Triple J</label>
+        <br>
+            <input type="radio" id="mmm" name="faveradio" value="mmm">
+                <label for="mmm">Triple M</label>
+
+        <br>
+            <input type="radio" id="goldfm" name="faveradio" value="goldfm">
+                <label for="goldfm">Gold FM</label>
+        <br>
+            <input type="radio" id="nova" name="faveradio" value="nova">
+                <label for="nova">Nova</label>
+        </div>
+        <br>
+        <div class="item">
+        <label id="checkboxes">Which music genres do you like?</label>
+        <br>
+            <input type="checkbox" id="jazz" name="favegenre" value="jazz">
+                <label for="jazz">Jazz</label>
+            <br>
+            <input type="checkbox" id="rock" name="favegenre" value="rock">
+                <label for="rock">Rock</label>
+            <br>
+            <input type="checkbox" id="hiphop" name="favegenre" value="hiphop">
+                <label for="hiphop">Hip Hop</label>
+            <br>
+            <input type="checkbox" id="techno" name="favegenre" value="techno">
+                <label for="techno">Techno</label>
+        </div>
+        <br>
+        
+        <div class="item">
+        <label id="comment-label">Any further comments?</label>
+        <br>
+        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Feel free to leave any further comments here."></textarea>
+        <br><br>
+
+        <input type="submit" id="submit" name="submit">
+        </div>
+        <br><br><br>
+        
+
+
+            
+    </form>
+</body>
+</html>

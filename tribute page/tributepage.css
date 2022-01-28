@@ -1,0 +1,59 @@
+* {
+    /*border: 2px solid black;*/
+    font-family: 'Roboto Mono', Courier, monospace;
+    margin: auto;
+    text-align: center;
+}
+
+#title {
+    font-size: 40px;
+    background-color: antiquewhite;
+    margin-block: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Century Gothic', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h2 {
+    font-size: 32px;
+}
+
+#img-div {
+    background-color: black;
+    padding: 10px;
+    
+}
+
+#image {
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: auto;
+    max-width: 400px;
+}
+
+#img-caption {
+    color: antiquewhite;
+    padding-top: 10px;
+}
+
+#tribute-info {
+    background-color: antiquewhite;
+    margin-block: 10px;
+    padding: 10px;
+    
+}
+
+ul {
+    text-align: none;
+    width: 30%;
+    list-style-position: inside;
+}
+
+li {
+
+}
+
+/* #tribute-link {} */

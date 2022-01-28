@@ -1,0 +1,135 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* border: 2px solid hotpink; */  
+}
+
+body {
+    background-color: darkgray;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gainsboro;
+    border-radius: 60px;
+    padding-inline: 25px;
+    padding-block: 10px;
+    margin-inline: 20px;
+    position: fixed;
+    width: 90%;
+    opacity: 80%;   
+}
+
+#header {
+    position: fixed;
+    top: 0;
+}
+
+#header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    flex: 2, 1, 70%;
+    gap: 20px;
+}
+
+#heading {
+    font-size: 64px;
+    font-weight:900;    
+}
+
+#header-img {
+    width: 60px;
+    height: 60px;
+    align-self: center;
+    border-radius: 50%;
+}
+
+#nav-bar2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    flex: 1, 1, 30%;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-link {
+    align-self: center;
+}
+
+#videodiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+#video {
+    border-radius: 60px;
+    margin: 24px;
+    border: 4px solid gainsboro;
+}
+
+#email-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 560px;
+    border: 2px solid gainsboro;
+    border-radius: 16px;
+    margin-top: -16px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+input[type=email]:focus {
+    outline: none;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nav-bar, #video, #email {
+    box-shadow: 10px 0px 10px gainsboro, 
+    -10px 0px 10px gainsboro,
+    0px 10px 10px gainsboro,
+    0px -10px 10px gainsboro;
+ }
+
+ #button {
+    text-align: center;
+ }
+
+ #submit {
+     width: 560px;
+     background-color: white;
+     border-radius: 16px;
+ }
+
+ #links {
+     font-size: 32px;
+ }
+
+ @media only screen and (max-width: 800px) {
+    #nav-bar {
+        font-size: 32px;
+        font-weight:900;    
+    }
+  }
